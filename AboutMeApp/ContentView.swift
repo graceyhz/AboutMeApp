@@ -45,8 +45,8 @@ struct ContentView: View {
                 .padding(.top)
                 
                 
-                HStack{
-                    VStack{
+                ZStack{
+                    VStack(alignment: .leading){
                         Button(action: {
                             paragraph = "I've done art since I was 6 years old! Although I primarily do digital art now, I also enjoy watercolor and gouache. I love drawing portraits the most!"
                         },
@@ -89,9 +89,8 @@ struct ContentView: View {
 
                         )}
                     .padding([.top, .bottom, .trailing], 10.0)
-                    Spacer()
                     Text(paragraph)
-                        .padding([.top, .bottom, .trailing]).foregroundColor(Color("lightYellow"))
+                        .padding(.all, 100.0).foregroundColor(Color("lightYellow"))
 
                     
                     
