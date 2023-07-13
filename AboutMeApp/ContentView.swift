@@ -15,11 +15,12 @@ struct CustomColor{
 }
 
 struct ContentView: View {
+    // GitHub practice :)
     @State private var showAlertArt = false
     @State private var showAlertBallet = false
     @State private var showAlertScioly = false
     @State var paragraph = "hellohelolheloelhleo"
-    
+
     var body: some View {
         ZStack{
             VStack {
